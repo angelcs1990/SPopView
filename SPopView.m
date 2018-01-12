@@ -67,6 +67,7 @@
     
     self.hidden = NO;
     
+    [self layoutIfNeeded];
     
     if ([self.child respondsToSelector:@selector(popShowAnimation)]) {
         [self.child popShowAnimation];
@@ -87,8 +88,6 @@
         [self removeFromSuperview];
         self.keepAlive = nil;
     }
-    
-    
 }
 
 - (void)setNeedUpdateUI
@@ -103,7 +102,7 @@
                 self.viewContainerRef = subView;
                 
                 if ([self.child respondsToSelector:@selector(popAfterInitView:)]) {
-                    [self.child popAfterInitView:self];
+                    [self.child popAfterInitView:subView];
                 }
                 
                 

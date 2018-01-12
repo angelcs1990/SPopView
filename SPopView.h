@@ -8,15 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
-
 @interface SPopViewConainter : UIView
 
 @end
-
-
-
-typedef void(^FinishAddBlock)();
 
 @class SPopView;
 

@@ -15,12 +15,6 @@
 @end
 
 
-
-
-
-
-typedef void(^FinishAddBlock)();
-
 @class SPopWindow;
 
 @protocol SPopWindowDelegate <NSObject>
