@@ -102,7 +102,7 @@
                 self.viewContainerRef = subView;
                 
                 if ([self.child respondsToSelector:@selector(popAfterInitView:)]) {
-                    [self.child popAfterInitView:subView];
+                    [self.child popAfterInitView:self];
                 }
                 
                 
